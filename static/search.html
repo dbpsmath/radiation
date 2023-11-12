@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="ab.js"></script>
+    <title>Search | Radiation</title>
+    <script>
+      function abcloak() {
+        const tab = window.open("about:blank", "_blank");
+        const iframe = tab.document.createElement("iframe");
+        const stl = iframe.style;
+        stl.border = stl.outline = "none";
+        stl.width = "100vw";
+        stl.height = "100vh";
+        stl.position = "fixed";
+        stl.left = stl.right = stl.top = stl.bottom = "0";
+        iframe.src = self.location;
+        tab.document.body.appndChild(iframe);
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Radiation</h1>
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="search.html">Search</a>
+        <button class="btnABCloak" onclick="abcloak()">AB Cloak</button>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="input-box">
+        <div class="form-box">
+          <form>
+            <h2>Search</h2>
+            <input placeholder="Surf, unblocked" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
