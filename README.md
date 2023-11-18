@@ -2,7 +2,7 @@ DBP's maths official proxy, radiation. A nice frontend for ultraviolet!
 
 Installation:
 ```
-git clone https://github.com/dbpsmath/radiation-proxy.git
+git clone https://github.com/dbpsmath/radiation.git
 npm install
 npm start
 ```
